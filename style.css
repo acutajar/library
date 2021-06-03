@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+.header {
+    display: flex;
+    height: 140px;
+    width: 100%;
+    background-color: rgb(172, 201, 228);
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    max-width: 1200px;
+
+}
+
+button {
+    border-radius:5%;
+    background-color: darkgrey;
+    border: 5;
+    margin:16px;
+    font-size: 25px;
+    font-weight:545;
+    width: 10rem;
+}
+
+.submit {
+    border-radius:5%;
+    background-color: darkgrey;
+    border: 5;
+    margin:16px;
+    font-size: 25px;
+    font-weight:545;
+    width: 10rem;
+}
+.book-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(180, 191, 228);
+    height: 20vh;
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 5%;
+    margin: 10px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    border:black 3px solid; 
+    font-size: 1.5rem;
+}
+
+.title {
+    font-style: italic;
+    word-wrap: break-word;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    background-color: #eee; 
+}
+
+.form-container {
+    min-width: 250px;
+    max-width: 400px;
+    background-color:rgb(207, 207, 207);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: auto;
+    right: auto;
+    border: 3px solid rgb(60, 70, 78)
+}
+
+.form-label {
+    display: inline-block;
+    width: 105px;
+}
