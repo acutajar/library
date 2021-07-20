@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href='favicon-32x32.png'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
     <title>Wow bookss</title>
-    
-</head>
-<body style="background-color: rgb(222, 222, 240); text-align: center;">
-    <div id='popup' class='form-popup'>
-        <form action="new-book" class='form-container' id='form' onsubmit="addBook();return false">
-            <h2>New Book</h2>
-            <label for="title" class="form-label">Title:</label>
-            <input type="text" name="title" id="title" placeholder="Book title.." required="true">
-            
-            <label for="author" class="form-label">Author:</label>
-            <input type="text" name="author" id="author" placeholder="Author.." required="true">
+  </head>
+  <body style="background-color: rgb(222, 222, 240); text-align: center">
+    <div id="popup" class="form-popup">
+      <form
+        action="new-book"
+        class="form-container"
+        id="form"
+        onsubmit="addBook();return false"
+      >
+        <h2>New Book</h2>
+        <label for="title" class="form-label">Title:</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Book title.."
+          required
+        />
 
-            <label for="pages" class="form-label">Pages:</label>
-            <input type="number" name="pages" id="pages" placeholder="# of pages.." required="true">
-            <br><br>
-            <label for="read" class="form-label">Read?:</label>
-            <input type="checkbox" name="NewRead" id="read" class="checkbox">
-            <br>
+        <label for="author" class="form-label">Author:</label>
+        <input
+          type="text"
+          name="author"
+          id="author"
+          placeholder="Author.."
+          required
+        />
 
-            <button type="submit" id="submit">Submit</button>
-            <button type="button" class="btnClose" onclick="closeForm()">Close</button>
-        
-        </form>
+        <label for="pages" class="form-label">Pages:</label>
+        <input
+          type="number"
+          name="pages"
+          id="pages"
+          placeholder="# of pages.."
+          min="0"
+          required
+        />
+        <br /><br />
+        <label for="read" class="form-label">Read?:</label>
+        <input type="checkbox" name="NewRead" id="read" class="checkbox" />
+        <br />
+
+        <button type="submit" id="submit">Submit</button>
+        <button type="button" class="btnClose" onclick="closeForm()">
+          Close
+        </button>
+      </form>
     </div>
-    <h1 class='header'>LIBRARY</h1>
-    <button id='add-book' class='new-book'>Add Book</button>
-    <div class='book-container'>
-        
-    </div>
+    <h1 class="header">LIBRARY</h1>
+    <button id="add-book" class="new-book">Add Book</button>
+    <div class="book-container"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
-
-
